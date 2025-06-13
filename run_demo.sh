@@ -1,5 +1,18 @@
 #!/bin/bash
 
+# Install required dependencies
+echo "Installing required dependencies..."
+sudo apt-get update
+sudo apt-get install -y libgstrtspserver-1.0-0
+
+# Check if libgstrtspserver is installed
+if ! dpkg -l | grep -q "libgstrtspserver-1.0-0"; then
+    echo "Error: Failed to install libgstrtspserver-1.0-0"
+    exit 1
+fi
+
+echo "Dependencies installed successfully!"
+
 echo "ARION AAS DeepStream Demo"
 echo "========================="
 
