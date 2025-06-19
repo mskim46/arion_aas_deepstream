@@ -2,6 +2,11 @@
 
 ONNX 기반 객체 탐지를 위한 간단한 DeepStream 데모입니다.
 
+## ARION AAS 초기 ID/PW
+
+- **ID**: nvidia
+- **PW**: nvidia
+
 ## 빠른 시작
 
 ```bash
